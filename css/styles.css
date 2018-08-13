@@ -1,3 +1,7 @@
 #shoppingList {
   display: none;
 }
+#shoppingList{
+  font-style: oblique;
+  align: right;
+}

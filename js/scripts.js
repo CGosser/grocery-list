@@ -5,17 +5,11 @@ return words.map(function(word){
   });
 }
 
-
-var cappycap = []
-
-
-// var alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
-
 $(document).ready(function() {
   var inputList = []
   var outputsList = []
   $("#inputs").submit(function(){
-    if ($("#food").val() != ""){
+    if ($("#food").val() != "" && (/\s+/g.test($("#food").val())) === false){
     inputList.push($("#food").val());
     console.log(inputList);
   }
